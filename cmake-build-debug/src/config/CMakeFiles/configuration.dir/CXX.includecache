@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shuliang/Documents/ReducedSpaceSimulation/src/config/Configuration.cpp
+Configuration.h
+/home/shuliang/Documents/ReducedSpaceSimulation/src/config/Configuration.h
+
+/home/shuliang/Documents/ReducedSpaceSimulation/src/config/Configuration.h
+

@@ -1,0 +1,2 @@
+add_executable(reducedSpaceSimulator reducedSpaceSimulator.cpp)
+
