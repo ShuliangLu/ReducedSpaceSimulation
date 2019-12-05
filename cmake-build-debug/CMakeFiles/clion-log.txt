@@ -1,9 +1,6 @@
-/home/shuliang/app/clion-2019.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/shuliang/Documents/ReducedSpaceSimulation
--- CMAKE_BINARY_DIR = /home/shuliang/Documents/ReducedSpaceSimulation/bin
--- EXECUTABLE_OUTPUT_PATH = /home/shuliang/Documents/ReducedSpaceSimulation/bin
--- LIBRARY_OUTPUT_PATH = /home/shuliang/Documents/ReducedSpaceSimulation/lib
--- PROJECT_SOURCE_DIR = /home/shuliang/Documents/ReducedSpaceSimulation/src
--- SRCs = /home/shuliang/Documents/ReducedSpaceSimulation/src/config/Configuration.cpp
+/home/shuliang/app/clion-2019.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=/usr/local/vcpkg/scripts/buildsystems/vcpkg.cmake -G "CodeBlocks - Unix Makefiles" /home/shuliang/Documents/ReducedSpaceSimulation
+-- CMAKE_LIBRARY_PATH = /usr/local/vcpkg/installed/x64-linux/debug/lib/manual-link;/usr/local/vcpkg/installed/x64-linux/lib/manual-link;/home/shuliang/Documents/ReducedSpaceSimulation/lib
+STATUS,"Compile lib test example"
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug

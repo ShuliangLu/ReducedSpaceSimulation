@@ -79,6 +79,7 @@ reducedSpaceSimulator_EXTERNAL_OBJECTS =
 
 ../bin/reducedSpaceSimulator: src/utility/CMakeFiles/reducedSpaceSimulator.dir/reducedSpaceSimulator.cpp.o
 ../bin/reducedSpaceSimulator: src/utility/CMakeFiles/reducedSpaceSimulator.dir/build.make
+../bin/reducedSpaceSimulator: ../lib/libConfigFile.a
 ../bin/reducedSpaceSimulator: src/utility/CMakeFiles/reducedSpaceSimulator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/reducedSpaceSimulator"
 	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/utility && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/reducedSpaceSimulator.dir/link.txt --verbose=$(VERBOSE)

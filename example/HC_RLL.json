@@ -1,0 +1,38 @@
+{
+  "example_name": "HangingCross_ReducedSpaceLinearFEMLatentSpace",
+  "model_filename": "hangingCross",
+
+  "using_latent_space_dynamics": true,
+  "latent_space_network_name" : "hangingCross_network",
+
+  "gravity": -29.4,
+  "elastic_model": "Linear",
+  "density": 450,
+  "young_modulus": 2e4,
+  "poisson_ratio": 0.48,
+  "damping_mass_coef": 0.0,
+  "damping_stiff_coef": 0.0,
+
+  "solver": "SI",
+
+
+  "using_reduced_space_dynamics": true,
+  "nbasis": 20,
+  "using_cubature": true,
+  "cubature_filename" : "hangingCross_cubature",
+
+  "time_step" : 0.001,
+  "max_iter": 15,
+  "tolerence": 1e-6,
+
+  "simulate_contact" : true,
+  "contact_model" : "VB",
+  "volume_contact_ratio": 2e6,
+
+
+  "recording_video": true,
+  "num_frames": 500,
+  "simulation_time": 5.0,
+  "recording_trace": true,
+  "num_traces_record": 500
+}

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/configuration.dir/Configuration.cpp.o"
+  "CMakeFiles/configuration.dir/ConfigFile.cpp.o"
   "../../../lib/libconfiguration.pdb"
-  "../../../lib/libconfiguration.so"
+  "../../../lib/libconfiguration.a"
 )
 
 # Per-language clean rules from dependency scanning.

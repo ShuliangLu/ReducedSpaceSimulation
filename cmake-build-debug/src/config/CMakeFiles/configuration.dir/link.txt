@@ -1,1 +1,2 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libconfiguration.so -o ../../../lib/libconfiguration.so CMakeFiles/configuration.dir/Configuration.cpp.o 
+/usr/bin/ar qc ../../../lib/libconfiguration.a  CMakeFiles/configuration.dir/ConfigFile.cpp.o
+/usr/bin/ranlib ../../../lib/libconfiguration.a

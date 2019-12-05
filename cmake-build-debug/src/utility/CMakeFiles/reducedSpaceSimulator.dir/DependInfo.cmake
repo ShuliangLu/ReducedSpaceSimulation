@@ -10,11 +10,13 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/vcpkg/installed/x64-linux/include"
   "../src"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

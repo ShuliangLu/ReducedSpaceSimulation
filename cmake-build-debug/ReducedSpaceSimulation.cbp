@@ -5,7 +5,7 @@
 		<Option title="ReducedSpaceSimulation"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\config\;CMake Files\src\utility\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\vcpkg\;CMake Files\..\..\..\..\usr\local\vcpkg\scripts\;CMake Files\..\..\..\..\usr\local\vcpkg\scripts\buildsystems\;CMake Files\..\..\..\..\usr\local\vcpkg\installed\;CMake Files\..\..\..\..\usr\local\vcpkg\installed\x64-linux\;CMake Files\..\..\..\..\usr\local\vcpkg\installed\x64-linux\share\;CMake Files\..\..\..\..\usr\local\vcpkg\installed\x64-linux\share\jsoncpp\;CMake Files\src\;CMake Files\src\config\;CMake Files\src\utility\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug"/>
@@ -37,13 +37,14 @@
 					<DistClean command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="configuration">
-				<Option output="/home/shuliang/Documents/ReducedSpaceSimulation/lib/libconfiguration.so" prefix_auto="0" extension_auto="0"/>
+			<Target title="ConfigFile">
+				<Option output="/home/shuliang/Documents/ReducedSpaceSimulation/lib/libConfigFile.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config"/>
 				<Option object_output="./"/>
-				<Option type="3"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/vcpkg/installed/x64-linux/include"/>
 					<Add directory="/home/shuliang/Documents/ReducedSpaceSimulation/src"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -55,19 +56,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 configuration"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 ConfigFile"/>
 					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="configuration/fast">
-				<Option output="/home/shuliang/Documents/ReducedSpaceSimulation/lib/libconfiguration.so" prefix_auto="0" extension_auto="0"/>
+			<Target title="ConfigFile/fast">
+				<Option output="/home/shuliang/Documents/ReducedSpaceSimulation/lib/libConfigFile.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config"/>
 				<Option object_output="./"/>
-				<Option type="3"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/vcpkg/installed/x64-linux/include"/>
 					<Add directory="/home/shuliang/Documents/ReducedSpaceSimulation/src"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -79,7 +81,57 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 configuration/fast"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 ConfigFile/fast"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testConfigLib">
+				<Option output="/home/shuliang/Documents/ReducedSpaceSimulation/src/config/testConfigLib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shuliang/Documents/ReducedSpaceSimulation/src/config"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/vcpkg/installed/x64-linux/include"/>
+					<Add directory="/home/shuliang/Documents/ReducedSpaceSimulation/src"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 testConfigLib"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testConfigLib/fast">
+				<Option output="/home/shuliang/Documents/ReducedSpaceSimulation/src/config/testConfigLib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shuliang/Documents/ReducedSpaceSimulation/src/config"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/vcpkg/installed/x64-linux/include"/>
+					<Add directory="/home/shuliang/Documents/ReducedSpaceSimulation/src"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 testConfigLib/fast"/>
 					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j20 -f &quot;/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config/Makefile&quot;  VERBOSE=1 clean"/>
@@ -92,6 +144,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/vcpkg/installed/x64-linux/include"/>
 					<Add directory="/home/shuliang/Documents/ReducedSpaceSimulation/src"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -116,6 +169,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/vcpkg/installed/x64-linux/include"/>
 					<Add directory="/home/shuliang/Documents/ReducedSpaceSimulation/src"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -134,17 +188,35 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/src/config/Configuration.cpp">
-			<Option target="configuration"/>
+		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/src/config/ConfigFile.cpp">
+			<Option target="ConfigFile"/>
 		</Unit>
-		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/src/config/Configuration.h">
-			<Option target="configuration"/>
+		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/src/config/ConfigFile.h">
+			<Option target="ConfigFile"/>
+		</Unit>
+		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/src/config/testConfigLib.cpp">
+			<Option target="testConfigLib"/>
 		</Unit>
 		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/src/utility/reducedSpaceSimulator.cpp">
 			<Option target="reducedSpaceSimulator"/>
 		</Unit>
 		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/../../../../usr/local/vcpkg/scripts/buildsystems/vcpkg.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\vcpkg\scripts\buildsystems\"/>
+		</Unit>
+		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/../../../../usr/local/vcpkg/installed/x64-linux/share/jsoncpp/jsoncppConfig-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\vcpkg\installed\x64-linux\share\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/../../../../usr/local/vcpkg/installed/x64-linux/share/jsoncpp/jsoncppConfig-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\vcpkg\installed\x64-linux\share\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/../../../../usr/local/vcpkg/installed/x64-linux/share/jsoncpp/jsoncppConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\vcpkg\installed\x64-linux\share\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/../../../../usr/local/vcpkg/installed/x64-linux/share/jsoncpp/jsoncppConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\vcpkg\installed\x64-linux\share\jsoncpp\"/>
 		</Unit>
 		<Unit filename="/home/shuliang/Documents/ReducedSpaceSimulation/src/config/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\config\"/>

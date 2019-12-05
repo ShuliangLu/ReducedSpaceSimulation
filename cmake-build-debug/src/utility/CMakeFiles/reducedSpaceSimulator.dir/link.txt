@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/reducedSpaceSimulator.dir/reducedSpaceSimulator.cpp.o  -o ../../../bin/reducedSpaceSimulator 
+/usr/bin/c++  -g   CMakeFiles/reducedSpaceSimulator.dir/reducedSpaceSimulator.cpp.o  -o ../../../bin/reducedSpaceSimulator  -L/usr/local/vcpkg/installed/x64-linux/lib -Wl,-rpath,/usr/local/vcpkg/installed/x64-linux/lib ../../../lib/libConfigFile.a -ljsoncpp 

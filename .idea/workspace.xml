@@ -2,20 +2,110 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="ReducedSpaceSimulation" targetName="testConfigLib" />
       <config projectName="ReducedSpaceSimulation" targetName="reducedSpaceSimulator" />
+      <config projectName="ReducedSpaceSimulation" targetName="ConfigFile" />
     </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=/usr/local/vcpkg/scripts/buildsystems/vcpkg.cmake" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73bb4fdf-342c-4557-8688-549a27e2b63d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ReducedSpaceSimulation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReducedSpaceSimulation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/CXX.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/ConfigFile.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/cmake_clean_target.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/ConfigFile.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/cmake_clean_target.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/CXX.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/testConfigLib.dir/testConfigLib.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/CXX.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/test_jsoncpp.dir/test_jsoncpp.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/HC_RLL.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/libConfigFile.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.h.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/ConfigFile.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/ConfigFile.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/testConfigLib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/testConfigLib.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/test_jsoncpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/test_jsoncpp.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/reducedSpaceSimulator" beforeDir="false" afterPath="$PROJECT_DIR$/bin/reducedSpaceSimulator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/ConfigFile.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reducedSpaceSimulator.dir/src/utility/reducedSpaceSimulator.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ReducedSpaceSimulation.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ReducedSpaceSimulation.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/Configuration.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/configuration.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/config/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/config/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/reducedSpaceSimulator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utility/CMakeFiles/reducedSpaceSimulator.dir/reducedSpaceSimulator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libconfiguration.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/Configuration.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/Configuration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/reducedSpaceSimulator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/reducedSpaceSimulator.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +121,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CMakeLists.txt" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -39,6 +130,7 @@
   </component>
   <component name="ProjectId" id="1UT9nhjyQC9bHGi1270bsFQBVZv" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -50,6 +142,17 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -63,12 +166,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="reducedSpaceSimulator" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReducedSpaceSimulation" TARGET_NAME="reducedSpaceSimulator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReducedSpaceSimulation" RUN_TARGET_NAME="reducedSpaceSimulator">
+  <component name="RunManager" selected="CMake Application.reducedSpaceSimulator">
+    <configuration name="reducedSpaceSimulator" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="${CMAKE_SOURCE_DIR}/example/HC_RLL.json" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReducedSpaceSimulation" TARGET_NAME="reducedSpaceSimulator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReducedSpaceSimulation" RUN_TARGET_NAME="reducedSpaceSimulator">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testConfigLib" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="${CMAKE_SOURCE_DIR}/example/HC_RLL.json" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReducedSpaceSimulation" TARGET_NAME="testConfigLib" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReducedSpaceSimulation" RUN_TARGET_NAME="testConfigLib">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.testConfigLib" />
+      <item itemvalue="CMake Application.reducedSpaceSimulator" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -81,7 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575369886684</updated>
       <workItem from="1575369890191" duration="2182000" />
-      <workItem from="1575446185664" duration="3401000" />
+      <workItem from="1575446185664" duration="44808000" />
     </task>
     <servers />
   </component>

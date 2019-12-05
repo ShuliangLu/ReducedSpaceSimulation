@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named configuration
+# Target rules for targets named ConfigFile
 
 # Build rule for target.
-configuration: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 configuration
-.PHONY : configuration
+ConfigFile: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ConfigFile
+.PHONY : ConfigFile
 
 # fast build rule for target.
-configuration/fast:
-	$(MAKE) -f src/config/CMakeFiles/configuration.dir/build.make src/config/CMakeFiles/configuration.dir/build
-.PHONY : configuration/fast
+ConfigFile/fast:
+	$(MAKE) -f src/config/CMakeFiles/ConfigFile.dir/build.make src/config/CMakeFiles/ConfigFile.dir/build
+.PHONY : ConfigFile/fast
+
+#=============================================================================
+# Target rules for targets named testConfigLib
+
+# Build rule for target.
+testConfigLib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testConfigLib
+.PHONY : testConfigLib
+
+# fast build rule for target.
+testConfigLib/fast:
+	$(MAKE) -f src/config/CMakeFiles/testConfigLib.dir/build.make src/config/CMakeFiles/testConfigLib.dir/build
+.PHONY : testConfigLib/fast
 
 #=============================================================================
 # Target rules for targets named reducedSpaceSimulator
@@ -144,7 +157,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... configuration"
+	@echo "... ConfigFile"
+	@echo "... testConfigLib"
 	@echo "... reducedSpaceSimulator"
 .PHONY : help
 

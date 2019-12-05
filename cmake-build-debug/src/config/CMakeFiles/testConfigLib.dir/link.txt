@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/testConfigLib.dir/testConfigLib.cpp.o  -o ../../../src/config/testConfigLib  -L/usr/local/vcpkg/installed/x64-linux/lib -Wl,-rpath,/usr/local/vcpkg/installed/x64-linux/lib ../../../lib/libConfigFile.a -ljsoncpp 

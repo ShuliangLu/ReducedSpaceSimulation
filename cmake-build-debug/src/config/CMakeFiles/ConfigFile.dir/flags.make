@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/shuliang/Documents/ReducedSpaceSimulation/src 
+CXX_INCLUDES = -I/usr/local/vcpkg/installed/x64-linux/include -I/home/shuliang/Documents/ReducedSpaceSimulation/src 
 

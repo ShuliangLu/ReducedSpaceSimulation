@@ -1,2 +1,2 @@
 add_executable(reducedSpaceSimulator reducedSpaceSimulator.cpp)
-
+target_link_libraries(reducedSpaceSimulator ConfigFile)

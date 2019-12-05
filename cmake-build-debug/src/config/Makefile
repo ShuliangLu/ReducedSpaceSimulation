@@ -23,6 +23,9 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -111,46 +114,88 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/config/CMakeFiles/configuration.dir/rule:
-	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/config/CMakeFiles/configuration.dir/rule
-.PHONY : src/config/CMakeFiles/configuration.dir/rule
+src/config/CMakeFiles/ConfigFile.dir/rule:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/config/CMakeFiles/ConfigFile.dir/rule
+.PHONY : src/config/CMakeFiles/ConfigFile.dir/rule
 
 # Convenience name for target.
-configuration: src/config/CMakeFiles/configuration.dir/rule
+ConfigFile: src/config/CMakeFiles/ConfigFile.dir/rule
 
-.PHONY : configuration
+.PHONY : ConfigFile
 
 # fast build rule for target.
-configuration/fast:
-	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/configuration.dir/build.make src/config/CMakeFiles/configuration.dir/build
-.PHONY : configuration/fast
+ConfigFile/fast:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/ConfigFile.dir/build.make src/config/CMakeFiles/ConfigFile.dir/build
+.PHONY : ConfigFile/fast
 
-Configuration.o: Configuration.cpp.o
+# Convenience name for target.
+src/config/CMakeFiles/testConfigLib.dir/rule:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/config/CMakeFiles/testConfigLib.dir/rule
+.PHONY : src/config/CMakeFiles/testConfigLib.dir/rule
 
-.PHONY : Configuration.o
+# Convenience name for target.
+testConfigLib: src/config/CMakeFiles/testConfigLib.dir/rule
+
+.PHONY : testConfigLib
+
+# fast build rule for target.
+testConfigLib/fast:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/testConfigLib.dir/build.make src/config/CMakeFiles/testConfigLib.dir/build
+.PHONY : testConfigLib/fast
+
+ConfigFile.o: ConfigFile.cpp.o
+
+.PHONY : ConfigFile.o
 
 # target to build an object file
-Configuration.cpp.o:
-	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/configuration.dir/build.make src/config/CMakeFiles/configuration.dir/Configuration.cpp.o
-.PHONY : Configuration.cpp.o
+ConfigFile.cpp.o:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/ConfigFile.dir/build.make src/config/CMakeFiles/ConfigFile.dir/ConfigFile.cpp.o
+.PHONY : ConfigFile.cpp.o
 
-Configuration.i: Configuration.cpp.i
+ConfigFile.i: ConfigFile.cpp.i
 
-.PHONY : Configuration.i
+.PHONY : ConfigFile.i
 
 # target to preprocess a source file
-Configuration.cpp.i:
-	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/configuration.dir/build.make src/config/CMakeFiles/configuration.dir/Configuration.cpp.i
-.PHONY : Configuration.cpp.i
+ConfigFile.cpp.i:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/ConfigFile.dir/build.make src/config/CMakeFiles/ConfigFile.dir/ConfigFile.cpp.i
+.PHONY : ConfigFile.cpp.i
 
-Configuration.s: Configuration.cpp.s
+ConfigFile.s: ConfigFile.cpp.s
 
-.PHONY : Configuration.s
+.PHONY : ConfigFile.s
 
 # target to generate assembly for a file
-Configuration.cpp.s:
-	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/configuration.dir/build.make src/config/CMakeFiles/configuration.dir/Configuration.cpp.s
-.PHONY : Configuration.cpp.s
+ConfigFile.cpp.s:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/ConfigFile.dir/build.make src/config/CMakeFiles/ConfigFile.dir/ConfigFile.cpp.s
+.PHONY : ConfigFile.cpp.s
+
+testConfigLib.o: testConfigLib.cpp.o
+
+.PHONY : testConfigLib.o
+
+# target to build an object file
+testConfigLib.cpp.o:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/testConfigLib.dir/build.make src/config/CMakeFiles/testConfigLib.dir/testConfigLib.cpp.o
+.PHONY : testConfigLib.cpp.o
+
+testConfigLib.i: testConfigLib.cpp.i
+
+.PHONY : testConfigLib.i
+
+# target to preprocess a source file
+testConfigLib.cpp.i:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/testConfigLib.dir/build.make src/config/CMakeFiles/testConfigLib.dir/testConfigLib.cpp.i
+.PHONY : testConfigLib.cpp.i
+
+testConfigLib.s: testConfigLib.cpp.s
+
+.PHONY : testConfigLib.s
+
+# target to generate assembly for a file
+testConfigLib.cpp.s:
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug && $(MAKE) -f src/config/CMakeFiles/testConfigLib.dir/build.make src/config/CMakeFiles/testConfigLib.dir/testConfigLib.cpp.s
+.PHONY : testConfigLib.cpp.s
 
 # Help Target
 help:
@@ -159,11 +204,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... configuration"
 	@echo "... edit_cache"
-	@echo "... Configuration.o"
-	@echo "... Configuration.i"
-	@echo "... Configuration.s"
+	@echo "... ConfigFile"
+	@echo "... testConfigLib"
+	@echo "... ConfigFile.o"
+	@echo "... ConfigFile.i"
+	@echo "... ConfigFile.s"
+	@echo "... testConfigLib.o"
+	@echo "... testConfigLib.i"
+	@echo "... testConfigLib.s"
 .PHONY : help
 
 

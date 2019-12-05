@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/test_jsoncpp.dir/test_jsoncpp.cpp.o  -o ../../../src/config/test_jsoncpp  -L/usr/local/vcpkg/installed/x64-linux/lib -Wl,-rpath,/usr/local/vcpkg/installed/x64-linux/lib -ljsoncpp 

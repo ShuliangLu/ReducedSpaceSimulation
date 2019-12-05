@@ -18,6 +18,9 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -57,34 +60,35 @@ include src/config/CMakeFiles/configuration.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/config/CMakeFiles/configuration.dir/flags.make
 
-src/config/CMakeFiles/configuration.dir/Configuration.cpp.o: src/config/CMakeFiles/configuration.dir/flags.make
-src/config/CMakeFiles/configuration.dir/Configuration.cpp.o: ../src/config/Configuration.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/config/CMakeFiles/configuration.dir/Configuration.cpp.o"
-	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/configuration.dir/Configuration.cpp.o -c /home/shuliang/Documents/ReducedSpaceSimulation/src/config/Configuration.cpp
+src/config/CMakeFiles/configuration.dir/ConfigFile.cpp.o: src/config/CMakeFiles/configuration.dir/flags.make
+src/config/CMakeFiles/configuration.dir/ConfigFile.cpp.o: ../src/config/ConfigFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/config/CMakeFiles/configuration.dir/ConfigFile.cpp.o"
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/configuration.dir/ConfigFile.cpp.o -c /home/shuliang/Documents/ReducedSpaceSimulation/src/config/ConfigFile.cpp
 
-src/config/CMakeFiles/configuration.dir/Configuration.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/configuration.dir/Configuration.cpp.i"
-	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuliang/Documents/ReducedSpaceSimulation/src/config/Configuration.cpp > CMakeFiles/configuration.dir/Configuration.cpp.i
+src/config/CMakeFiles/configuration.dir/ConfigFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/configuration.dir/ConfigFile.cpp.i"
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuliang/Documents/ReducedSpaceSimulation/src/config/ConfigFile.cpp > CMakeFiles/configuration.dir/ConfigFile.cpp.i
 
-src/config/CMakeFiles/configuration.dir/Configuration.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/configuration.dir/Configuration.cpp.s"
-	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuliang/Documents/ReducedSpaceSimulation/src/config/Configuration.cpp -o CMakeFiles/configuration.dir/Configuration.cpp.s
+src/config/CMakeFiles/configuration.dir/ConfigFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/configuration.dir/ConfigFile.cpp.s"
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuliang/Documents/ReducedSpaceSimulation/src/config/ConfigFile.cpp -o CMakeFiles/configuration.dir/ConfigFile.cpp.s
 
 # Object files for target configuration
 configuration_OBJECTS = \
-"CMakeFiles/configuration.dir/Configuration.cpp.o"
+"CMakeFiles/configuration.dir/ConfigFile.cpp.o"
 
 # External object files for target configuration
 configuration_EXTERNAL_OBJECTS =
 
-../lib/libconfiguration.so: src/config/CMakeFiles/configuration.dir/Configuration.cpp.o
-../lib/libconfiguration.so: src/config/CMakeFiles/configuration.dir/build.make
-../lib/libconfiguration.so: src/config/CMakeFiles/configuration.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library ../../../lib/libconfiguration.so"
+../lib/libconfiguration.a: src/config/CMakeFiles/configuration.dir/ConfigFile.cpp.o
+../lib/libconfiguration.a: src/config/CMakeFiles/configuration.dir/build.make
+../lib/libconfiguration.a: src/config/CMakeFiles/configuration.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libconfiguration.a"
+	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config && $(CMAKE_COMMAND) -P CMakeFiles/configuration.dir/cmake_clean_target.cmake
 	cd /home/shuliang/Documents/ReducedSpaceSimulation/cmake-build-debug/src/config && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/configuration.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/config/CMakeFiles/configuration.dir/build: ../lib/libconfiguration.so
+src/config/CMakeFiles/configuration.dir/build: ../lib/libconfiguration.a
 
 .PHONY : src/config/CMakeFiles/configuration.dir/build
 
